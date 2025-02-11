@@ -1,0 +1,10 @@
+n = int(input().strip())
+previous_magnet = input().strip()
+group_count = 1
+for _ in range(n - 1):
+    current_magnet = input().strip()
+    if current_magnet != previous_magnet:
+        group_count += 1
+    previous_magnet = current_magnet
+print(group_count)
+

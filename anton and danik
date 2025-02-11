@@ -1,0 +1,10 @@
+n=int(input())
+y=input()
+anton_wins=y.count('A')
+danik_wins=y.count('D')
+if anton_wins>danik_wins:
+    print("anton")
+elif anton_wins<danik_wins:
+    print("danik")
+else:
+    print("friendship")

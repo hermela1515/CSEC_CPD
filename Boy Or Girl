@@ -1,0 +1,8 @@
+username = input().strip()
+unique_chars = set(username)
+num_unique = len(unique_chars)
+if num_unique % 2 == 0:
+    print("CHAT WITH HER!")
+else:
+    print("IGNORE HIM!")
+

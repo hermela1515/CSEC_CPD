@@ -1,0 +1,9 @@
+n=int(input())
+problems=0
+for _ in range(n):
+    petya,vesya,tonya=map(int,input().split())
+    if petya+vesya+tonya>=2:
+        problems+=1
+    else:
+        problems+=0
+print(problems)

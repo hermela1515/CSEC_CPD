@@ -1,0 +1,14 @@
+def count_guest_uniform_games(n, uniforms):
+    count = 0
+
+    home_colors = [uniform[0] for uniform in uniforms]
+    guest_colors = [uniform[1] for uniform in uniforms]
+        for j in range(n):
+            if i != j and home_colors[i] == guest_colors[j]:
+                count += 1
+
+    return count
+n = int(input())  
+uniforms = [tuple(map(int, input().split())) for _ in range(n)]
+print(count_guest_uniform_games(n, uniforms))
+

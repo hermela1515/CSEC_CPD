@@ -1,0 +1,11 @@
+import math
+
+def dot_win_probability(Y, W):
+    M = max(Y, W)  
+    numerator = 7 - M  
+    denominator = 6  
+    gcd = math.gcd(numerator, denominator)
+    return f"{numerator // gcd}/{denominator // gcd}"
+Y, W = map(int, input().split())
+print(dot_win_probability(Y, W))
+

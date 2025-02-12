@@ -1,0 +1,10 @@
+def total_calories(calories, game_sequence):
+    total = 0
+    for char in game_sequence:
+        total += calories[int(char) - 1] 
+    return total
+a1, a2, a3, a4 = map(int, input().split())  
+s = input().strip()  
+calories = [a1, a2, a3, a4]
+print(total_calories(calories, s))
+

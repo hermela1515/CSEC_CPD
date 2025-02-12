@@ -1,0 +1,15 @@
+def min_rotations_to_print(name):
+    total_rotations = 0
+    current_char = 'a'  
+
+    for char in name:
+        clockwise_dist = abs(ord(char) - ord(current_char))
+        counterclockwise_dist = 26 - clockwise_dist
+        total_rotations += min(clockwise_dist, counterclockwise_dist)
+    
+        current_char = char
+
+    return total_rotations
+name = input().strip()
+print(min_rotations_to_print(name))
+
